@@ -1,6 +1,8 @@
-class Reading:
-    # TODO: change this to represent whatever information is needed
-    pass
+from pydantic import BaseModel
+class Reading(BaseModel):
+    time: str
+    name: str
+    value: float
 
 
 # This is a fake database which stores data in-memory while the process is running
